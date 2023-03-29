@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-GB">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <head>
   <meta charset="utf-8">
   <style>
@@ -11,19 +12,23 @@
 <body>
   <div id="demo"></div>
 
+  <role-wall>
+    <div> Hello World</div>
+  </role-wall>
+
+  <role-wall>
+      <div class="h1">Keith Charlton</div>
+      <div class="h3">Pennsylvania State University | College Of IST <br>
+      Enterprise Technology Integration, B.S. <br>
+      Expected Graduation: May 2024
+      </div> 
+  </role-wall>
+
+
+</div>
   <script type="module">
     import { html, render } from 'lit';
     import '../role-wall.js';
-
-    const header = 'Hello owc World!';
-    render(
-      html`
-        <role-wall .header=${header}>
-          some light-dom
-        </role-wall>
-      `,
-      document.querySelector('#demo')
-    );
   </script>
 </body>
 </html>
